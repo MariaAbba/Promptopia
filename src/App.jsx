@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
+import {useEffect} from 'react'
+
 import Header from './components/Header'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    })
+  }, [])
+  
 
   return (
     <>
-    <Header />
+      <Header />
       <Hero />
       <Footer />
     </>
