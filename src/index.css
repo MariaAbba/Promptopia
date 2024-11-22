@@ -1,15 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-.hoverImg {
-  width: 100%;
-  transition: .9s all ease-in-out;
-}
-.hoverImg:hover {
- transform:scale(1.2)
-}
+  .hoverImg {
+    width: 100%;
+    transition: .9s all ease-in-out;
+  }
+  .hoverImg:hover {
+  transform:scale(1.2)
+  }
 
-.transition-bg {
-    transition: .5s all ease-in-out;
-}
+  .transition-bg {
+      transition: .5s all ease-in-out;
+  }
