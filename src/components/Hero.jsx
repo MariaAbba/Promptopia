@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import img from '../assets/img1.jpg'
 import arrow from '../assets/arrow1.png'
 import { MdOutlineParagliding } from 'react-icons/md'
@@ -14,6 +14,8 @@ import { FaUmbrellaBeach } from 'react-icons/fa'
 import { LiaWarehouseSolid } from 'react-icons/lia'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { IoIosArrowForward } from 'react-icons/io'
+import uk from '../assets/uk.jpg'
 
 const responsives = {
   superLargeDesktop: {
@@ -34,16 +36,69 @@ const responsives = {
   },
 }
 
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+  },
+  module: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+}
+
 const type = [
-  { id:1, title: 'Adventure', icon: <FaPlaneSlash /> },
-  { id:2, title: 'Discovery', icon: <RiPlanetLine /> },
-  { id:3, title: 'Mountain Biking', icon: <FaBiking /> },
-  { id:4, title: 'Beach', icon: <FaUmbrellaBeach /> },
-  { id:5, title: 'Adventure', icon: <LiaWarehouseSolid /> },
+  { id: 1, title: 'Adventure', icon: <FaPlaneSlash /> },
+  { id: 2, title: 'Discovery', icon: <RiPlanetLine /> },
+  { id: 3, title: 'Mountain Biking', icon: <FaBiking /> },
+  { id: 4, title: 'Beach', icon: <FaUmbrellaBeach /> },
+  { id: 5, title: 'Adventure', icon: <LiaWarehouseSolid /> },
   // { title: 'Adventure', icon: <RiPlanetLine /> },
 ]
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(-1)
+
+  const handleAfterChange = (_, state) => {
+    setCurrentSlide(state.currentSlide)
+  }
+
+  const Explore = ({ image, country }) => {
+    return (
+      <div className=" relative group overflow-hidden rounded-[10px] shadow-lg">
+        <img
+          src={image}
+          alt={country}
+          className="w-full h-[350px] object-cover rounded-[10px] transition-transform duration-700 ease-in-out group-hover:scale-125 "
+        />
+        <span className="bg-orange rounded-lg px-5 text-white text-xs absolute top-5 right-5 uppercase font-bold leading-8 whitespace-pre">
+          3 Tours
+        </span>
+        <div className="absolute bottom-0 w-full bg-black bg-opacity-50 py-5 flex flex-col items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:bg-opacity-100">
+          <p className="text-green text-xl font-bold flex flex-col">
+            Travel to
+            <span className="text-white text-2xl group-hover:text-gray-800">
+              {country}
+            </span>
+          </p>
+
+          <div className="absolute -top-5 right-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <button className="bg-orange text-white p-2 rounded-full">
+              <IoIosArrowForward className="text-xl" />
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div>
       <section
@@ -126,11 +181,12 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="bg-[#F3F8F6] bg-[url('/bg-shape-01.jpg)] ">
+      <section className="bg-[#F3F8F6] bg-[url('/bg-shape-01.jpg')]">
         <div className="relative z-10 max-w-[1320px] px-6 mx-auto -mt-24">
           <Carousel
             responsive={responsives}
             infinite
+            afterChange={handleAfterChange}
             autoPlay={true}
             itemClass="px-2"
           >
@@ -174,6 +230,34 @@ const Hero = () => {
               </div>
             ))}
           </Carousel>
+        </div>
+
+        <div className="max-w-[1320px] mx-auto pt-24">
+          <div className="py-16">
+            <div className="flex flex-col items-center">
+              <div className="relative w-fit px-8 py-2 flex items-center justify-center">
+                <span className="bg-green rounded-md opacity-15 absolute w-full h-full z-10"></span>
+                <h6 className="text-green relative font-semibold">
+                  Popular activities
+                </h6>
+              </div>
+              <h3 className="lg:text-5xl text-3xl font-bold pb-8 text-center py-4">
+                Explore Real Adventure
+              </h3>
+            </div>
+            <Carousel
+              responsive={responsive}
+              infinite
+              autoPlay={true}
+              itemClass="px-2 pb-6"
+            >
+              <Explore country="United Kingdom" image={uk} />
+              <Explore country="France" image={uk} />
+              <Explore country="Singapore" image={uk} />
+              <Explore country="Thailand" image={uk} />
+            </Carousel>
+            <div className="py-8"></div>
+          </div>
         </div>
       </section>
     </div>
