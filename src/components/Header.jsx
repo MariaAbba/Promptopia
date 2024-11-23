@@ -14,13 +14,13 @@ const Header = () => {
   return (
     <nav className="w-full h-24 flex flex-col justify-center items-center sticky top-0 z-50 bg-[#1D231F]">
       <div className="container mx-auto lg:px-3 w-full">
-        <div className="lg:w-full w-11/12 mx-auto h-full flex lg:justify-center gap-16">
+        <div className="lg:w-full w-11/12 mx-auto h-full flex lg:justify-center justify-between items-center gap-16">
           <div className="flex flex-col gap-y-4">
             <div className="flex items-center gap-x-2">
-              <img src={logo} alt="logo" className="w-10" />
+              <img src={logo} alt="logo" className="w-20" />
             </div>
           </div>
-          <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden ">
+          <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
             <a
               href="#home"
               className="leading-normal no-underline text-white text-lg hover:text-green"
@@ -71,42 +71,42 @@ const Header = () => {
               className="lg:hidden text-2xl cursor-pointer text-black"
               onClick={showDropdown}
             >
-              <IoClose />
+              <IoClose className="text-white  hover:text-green " />
             </div>
           ) : (
             <div
               className="lg:hidden text-2xl cursor-pointer text-black"
               onClick={showDropdown}
             >
-              <IoMdMenu />
+              <IoMdMenu className="text-white  hover:text-green " />
             </div>
           )}
         </div>
         {dropdown && (
-          <div className="lg:hidden w-full fixed top-24 bg-white transition-all">
+          <div className="lg:hidden w-full fixed top-24 bg-white  h-[70vh] transition-all ">
             <div className="w-full flex flex-col items-baseline gap-4">
               <ul className="w-full flex flex-col justify-center">
                 <a
                   href="#home"
-                  className="leading-normal no-underline text-white text-lg hover:text-green"
+                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
                 >
                   Home
                 </a>
                 <a
                   href="#tours"
-                  className="leading-normal no-underline text-white text-lg hover:text-green"
+                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
                 >
                   Tours
                 </a>
                 <a
                   href="#destinations"
-                  className="leading-normal no-underline text-white text-lg hover:text-green"
+                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
                 >
                   Destinations
                 </a>
                 <a
                   href="#news"
-                  className="leading-normal no-underline text-white text-lg hover:text-green"
+                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
                 >
                   News
                 </a>

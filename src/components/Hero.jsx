@@ -35,15 +35,15 @@ const responsives = {
 }
 
 const type = [
-  { title: 'Adventure', icon: <FaPlaneSlash /> },
-  { title: 'Discovery', icon: <RiPlanetLine /> },
-  { title: 'Mountain Biking', icon: <FaBiking /> },
-  { title: 'Beach', icon: <FaUmbrellaBeach /> },
-  { title: 'Adventure', icon: <LiaWarehouseSolid /> },
+  { id:1, title: 'Adventure', icon: <FaPlaneSlash /> },
+  { id:2, title: 'Discovery', icon: <RiPlanetLine /> },
+  { id:3, title: 'Mountain Biking', icon: <FaBiking /> },
+  { id:4, title: 'Beach', icon: <FaUmbrellaBeach /> },
+  { id:5, title: 'Adventure', icon: <LiaWarehouseSolid /> },
   // { title: 'Adventure', icon: <RiPlanetLine /> },
 ]
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(-1)
   return (
     <div>
       <section
@@ -135,9 +135,8 @@ const Hero = () => {
             itemClass="px-2"
           >
             {type.map((item, index) => (
-              <div className="group">
+              <div className="group" key={index}>
                 <div
-                  key={index}
                   className={`cursor-pointer p-8 rounded-lg flex flex-col justify-center items-start gap-4 ${
                     currentSlide % type.length === index
                       ? 'bg-green text-white'
