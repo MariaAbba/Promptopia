@@ -38,3 +38,7 @@
 .card {
   padding: 2em;
 }
+
+.flex-flow-reverse {
+  flex-wrap: wrap;
+}

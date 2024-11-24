@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Footer from './components/Footer'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Popular from './components/Popular'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Popular />
       <Footer />
     </>
   )

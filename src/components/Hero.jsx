@@ -16,6 +16,10 @@ import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import { IoIosArrowForward } from 'react-icons/io'
 import uk from '../assets/uk.jpg'
+import fr from '../assets/fr.jpg'
+import sing from '../assets/sing.jpg'
+import phi from '../assets/phi.jpg'
+import costa from '../assets/costa.jpg'
 
 const responsives = {
   superLargeDesktop: {
@@ -252,9 +256,10 @@ const Hero = () => {
               itemClass="px-2 pb-6"
             >
               <Explore country="United Kingdom" image={uk} />
-              <Explore country="France" image={uk} />
-              <Explore country="Singapore" image={uk} />
-              <Explore country="Thailand" image={uk} />
+              <Explore country="France" image={fr} />
+              <Explore country="Singapore" image={sing} />
+              <Explore country="Thailand" image={phi} />
+              <Explore country="Costa Rica" image={costa} />
             </Carousel>
             <div className="py-8"></div>
           </div>
