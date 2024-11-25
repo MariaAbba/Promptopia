@@ -111,7 +111,7 @@ const Hero = () => {
         data-aos-delay="300"
         data-aos-duration="3000"
       >
-        <img src={img} alt="" className="absolute h-full w-full object-cover" />
+        <img src={img} alt="mountains" className="absolute h-full w-full object-cover" />
         <div className="flex flex-col justify-center items-center relative z-10 lg:h-full h-screen max-w-[1320px] px-6 lg:pt-0 pt-16 mx-auto">
           <span className="lg:text-5xl text-3xl text-white text-center font-bold relative">
             Where Would You Like To Go?
