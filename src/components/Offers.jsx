@@ -6,6 +6,11 @@ import { IoArrowForward } from 'react-icons/io5'
 import { LiaWarehouseSolid } from 'react-icons/lia'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import image01 from './../assets/img-01.jpg'
+import image02 from './../assets/img-02.jpg'
+import image03 from './../assets/img-03.jpg'
+import image04 from './../assets/img-04.jpg'
+import image05 from './../assets/img-05.jpg'
 
 const responsive = {
   superLargeDesktop: {
@@ -29,27 +34,27 @@ const responsive = {
 const offers = [
   {
     icon: <LiaWarehouseSolid />,
-    image: '/image-01.jpg',
+    image: image01,
     text: 'Tent Camping',
   },
   {
     icon: <BsTrainLightrailFront />,
-    image: '/image-02.jpg',
+    image: image02,
     text: 'Glamping Cabin',
   },
   {
     icon: <FaBusAlt />,
-    image: '/image-19.jpg',
+    image: image03,
     text: 'RV Caravan Trailers',
   },
   {
     icon: <GiWoodenPier />,
-    image: '/tour-11.jpg',
+    image: image04,
     text: 'Adventure and climbing',
   },
   {
     icon: <FaBiking />,
-    image: '/tour-2.jpg',
+    image: image05,
     text: 'Mountain climbing',
   },
 ]
@@ -58,16 +63,15 @@ const Offers = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   return (
     <div className="bg-[url('/assets/bg-02.jpg')] pb-24">
-      <div className="max-w-[1320px] mx-auto py-24 bg-cover bg-centerbg-cover bg-center">
+      <div className="max-w-[1320px] mx-auto py-24">
         <div className="flex flex-col items-center">
           <div className="relative w-fit px-8 py-2 flex items-center justify-center">
-            <span className="bg-green rounded-md opacity-15 absolute w-full h-full z-10">
-              <h6 className="text-orange relative font-semibold">
-                What we offering!
-              </h6>
-            </span>
+            <span className="bg-green rounded-md opacity-15 absolute w-full h-full z-10"></span>
+            <h6 className="text-green relative font-semibold">
+              What we offering!
+            </h6>
           </div>
-          <h3 className="lg:text-5xl text-3xl font-bold pb-8 text-white">
+          <h3 className="lg:text-5xl text-3xl font-bold pb-8 text-white lg:w-4/5 text-center py-4">
             Feel real adventure and very close to nature.
           </h3>
         </div>
@@ -86,7 +90,7 @@ const Offers = () => {
                   backgroundImage:
                     hoveredIndex === index ? `url(${offer.image})` : 'none',
 
-                  backgroundImage:
+                  backgroundColor:
                     hoveredIndex === index ? 'transparent' : 'black',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
@@ -113,7 +117,7 @@ const Offers = () => {
                     Sequi, aliquam?
                   </p>
                 </div>
-                <div className="absolute bottom-5 right-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute -bottom-5 right-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <button className="bg-green text-white p-2 rounded-full">
                     <IoArrowForward className="text-xl" />
                   </button>
