@@ -15,11 +15,11 @@ import image05 from './../assets/img-05.jpg'
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 4,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 5,
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -114,7 +114,7 @@ const Offers = () => {
                   </p>
                   <p className="text-[#d3d3d3] leading-7">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi, aliquam?
+                 
                   </p>
                 </div>
                 <div className="absolute -bottom-5 right-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
