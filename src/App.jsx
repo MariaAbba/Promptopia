@@ -9,6 +9,8 @@ import 'aos/dist/aos.css'
 import Popular from './components/Popular'
 import Offers from './components/Offers'
 import Tour from './components/Tour'
+import Explore from './components/Explore'
+import Blog from './components/Blog'
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function App() {
       <Popular />
       <Offers />
       <Tour />
+      <Explore />
+      <Blog />
       <Footer />
     </>
   )
