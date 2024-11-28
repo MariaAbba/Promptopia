@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+  content: [
+    './src/**/*.{html,js,jsx,ts,tsx}',
+    './node_modules/@headlessui/react/**/*.js',
+  ],
+
   theme: {
     extend: {
       colors: {
