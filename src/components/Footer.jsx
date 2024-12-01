@@ -49,17 +49,17 @@ const Footer = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div className="flex items-center gap-2">
-                <button className="rounded-full hover:bg-white hover:text-black bg-[#262d28]">
-                  <BsTwitter size={14} />
+                <button className="rounded-full p-3 hover:bg-white hover:text-black bg-[#262d28]">
+                  <BsTwitter size={14} color="white" />
                 </button>
-                <button className="rounded-full hover:bg-white hover:text-black bg-[#262d28]">
-                  <FaFacebook size={14} />
+                <button className="rounded-full p-3  hover:bg-white hover:text-black bg-[#262d28]">
+                  <FaFacebook size={14}  color="white"/>
                 </button>
-                <button className="rounded-full hover:bg-white hover:text-black bg-[#262d28]">
-                  <BsInstagram size={14} />
+                <button className="rounded-full p-3  hover:bg-white hover:text-black bg-[#262d28]">
+                  <BsInstagram size={14} color="white" />
                 </button>
-                <button className="rounded-full hover:bg-white hover:text-black bg-[#262d28]">
-                  <BsLinkedin size={14} />
+                <button className="rounded-full p-3  hover:bg-white hover:text-black bg-[#262d28]">
+                  <BsLinkedin size={14} color="white" />
                 </button>
               </div>
             </div>
@@ -67,35 +67,33 @@ const Footer = () => {
             <div className="lg:w-1/5 text-white">
               <h6 className="text-xl font-bold my-5 lg:mt-0">Pages</h6>
               <ul className="flex flex-col gap-4">
-                <li>
-                  <a href="#" className="hover:text-green">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green">
-                    Community Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green">
-                    Work with us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-green">
-                    Contact US
-                  </a>
-                </li>
+                <a href="#" className="hover:text-green">
+                  About Us
+                </a>
+
+                <a href="#" className="hover:text-green">
+                  Community Blog
+                </a>
+
+                <a href="#" className="hover:text-green">
+                  Work with us
+                </a>
+
+                <a href="#" className="hover:text-green">
+                  Privacy Policy
+                </a>
+
+                <a href="#" className="hover:text-green">
+                  Contact US
+                </a>
               </ul>
             </div>
+
+            
             <div className="flex flex-col lg:w-1/3 text-white">
-              <h6 className="text-white text-xl font-bold my-5 lg:mt-0"></h6>
+              <h6 className="text-white text-xl font-bold my-5 lg:mt-0">
+                Newsletter
+              </h6>
               <p className="my-5">
                 Subscribe to our newsletter to get our latest update & news
               </p>

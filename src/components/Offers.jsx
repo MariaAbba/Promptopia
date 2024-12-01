@@ -67,7 +67,7 @@ const Offers = () => {
         <div className="flex flex-col items-center">
           <div className="relative w-fit px-8 py-2 flex items-center justify-center">
             <span className="bg-green rounded-md opacity-15 absolute w-full h-full z-10"></span>
-            <h6 className="text-green relative font-semibold">
+            <h6 className="text-orange relative font-semibold">
               What we offering!
             </h6>
           </div>
