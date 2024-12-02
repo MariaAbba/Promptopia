@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1d231f] pt-44">
       <div className="max-w-[1320px] mx-auto px-3">
-        <div className="lg:flex gap-16 pb-20">
+        <div className="lg:flex gap-16 pb-20 justify-center  text-white">
           <div className="flex items-center justify-between lg:pb-0 pb-8">
             <span className="flex gap-4 items-center lg:w-3/4">
               <img src={headphone} alt="" height={80} width={80} />
@@ -28,8 +28,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-between lg:pb-0 pb-8">
-            <span className="flex gap-4 items-center lg:w-3/4">
+          <div className="flex items-center justify-between lg:pb-0 pb-8 ">
+            <span className="flex gap-4 items-center lg:w-3/4 ">
               <img src={globe} alt="" height={80} width={80} />
               <p>Ready to Get Started With Vacations! </p>
             </span>
@@ -42,18 +42,18 @@ const Footer = () => {
         </div>
 
         <div>
-          <div>
-            <div>
+          <div className="lg:flex items-center justify-center">
+            <div className=" text-white">
               <img src={logo} alt="" width={130} />
               <p className="my-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 justify-center">
                 <button className="rounded-full p-3 hover:bg-white hover:text-black bg-[#262d28]">
                   <BsTwitter size={14} color="white" />
                 </button>
                 <button className="rounded-full p-3  hover:bg-white hover:text-black bg-[#262d28]">
-                  <FaFacebook size={14}  color="white"/>
+                  <FaFacebook size={14} color="white" />
                 </button>
                 <button className="rounded-full p-3  hover:bg-white hover:text-black bg-[#262d28]">
                   <BsInstagram size={14} color="white" />
@@ -89,7 +89,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            
             <div className="flex flex-col lg:w-1/3 text-white">
               <h6 className="text-white text-xl font-bold my-5 lg:mt-0">
                 Newsletter
@@ -113,9 +112,9 @@ const Footer = () => {
               </label>
             </div>
 
-            <div className="pt-[15px]">
+            <div className="pt-[15px] text-white">
               <ul className="flex flex-col gap-4">
-                <div className="flex items-center gap-4">
+                <li className="flex items-center gap-4">
                   <button className="flex items-center gap-2 bg-[#262d28] rounded-full w-fit justify-center p-4 hover:text-green">
                     <MdPhone className="text-green" />
                   </button>
@@ -123,9 +122,9 @@ const Footer = () => {
                     <p>Drop a Line</p>
                     <p>+00 (123) 456 889</p>
                   </span>
-                </div>
+                </li>
 
-                <div className="flex items-center gap-4">
+                <li className="flex items-center gap-4">
                   <button className="flex items-center gap-2 bg-[#262d28] rounded-full w-fit justify-center p-4 hover:text-green">
                     <MdOutlineMailOutline className="text-green" />
                   </button>
@@ -133,8 +132,8 @@ const Footer = () => {
                     <p>Email Address</p>
                     <p>qKp7o@example.com</p>
                   </span>
-                </div>
-                <div className="flex items-center gap-4">
+                </li>
+                <li className="flex items-center gap-4">
                   <button className="flex items-center gap-2 bg-[#262d28] rounded-full w-fit justify-center p-4 hover:text-green">
                     <MdOutlineLocationOn className="text-green" />
                   </button>
@@ -142,7 +141,7 @@ const Footer = () => {
                     <p>Visit Office</p>
                     <p>583 Main Str. New York, USA</p>
                   </span>
-                </div>
+                </li>
               </ul>
             </div>
           </div>

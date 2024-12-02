@@ -68,7 +68,7 @@ const type = [
   // { title: 'Adventure', icon: <RiPlanetLine /> },
 ]
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(-1)
+  const [currentSlide, setCurrentSlide] = useState(null)
 
   const handleAfterChange = (_, state) => {
     setCurrentSlide(state.currentSlide)
