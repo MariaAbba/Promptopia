@@ -65,15 +65,13 @@ const type = [
   { id: 3, title: 'Mountain Biking', icon: <FaBiking /> },
   { id: 4, title: 'Beach', icon: <FaUmbrellaBeach /> },
   { id: 5, title: 'Adventure', icon: <LiaWarehouseSolid /> },
-  // { title: 'Adventure', icon: <RiPlanetLine /> },
 ]
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(null)
+  const [currentSlide, setCurrentSlide] = useState(0)
 
   const handleAfterChange = (_, state) => {
     setCurrentSlide(state.currentSlide)
   }
-
   const Explore = ({ image, country }) => {
     return (
       <div className=" relative group overflow-hidden rounded-[10px] shadow-lg">
@@ -179,7 +177,7 @@ const Hero = () => {
           </div>
           <img
             src={arrow}
-            alt=""
+            alt="arrow image"
             className="lg:block hidden my-4 -ml-96 filter brightness-0 invert"
             style={{ height: '100px', width: 'auto' }}
           />
