@@ -15,11 +15,13 @@ const Footer = () => {
   return (
     <footer className="bg-[#1d231f] pt-44">
       <div className="max-w-[1320px] mx-auto px-3">
-        <div className="lg:flex gap-16 pb-20 justify-center  text-white">
-          <div className="flex items-center justify-between lg:pb-0 pb-8">
+        <div className="flex gap-16 pb-20">
+          <div className="flex justify-between items-center lg:pb-0 pb-8">
             <span className="flex gap-4 items-center lg:w-3/4">
               <img src={headphone} alt="" height={80} width={80} />
-              <p>Need any support for tour & travels? </p>
+              <p className="lg:text-3xl text-lg text-white">
+                Need any support for tour & travels?{' '}
+              </p>
             </span>
             <div className="lg:w-1/4 lg:flex hidden justify-end">
               <button className="bg-green text-white rounded-full w-16 h-16 flex items-center justify-center">
@@ -27,11 +29,12 @@ const Footer = () => {
               </button>
             </div>
           </div>
-
-          <div className="flex items-center justify-between lg:pb-0 pb-8 ">
-            <span className="flex gap-4 items-center lg:w-3/4 ">
+          <div className="flex items-center justify-between lg:border-0 border-t border-[#FFFFFF1A] lg:pt-0 pt-8 ">
+            <span className="flex gap-4 items-center lg:w-3/4">
               <img src={globe} alt="" height={80} width={80} />
-              <p>Ready to Get Started With Vacations! </p>
+              <p className="lg:text-3xl text-lg text-white">
+                Ready to Get Started With Vacations!{' '}
+              </p>
             </span>
             <div className="lg:w-1/4 lg:flex hidden justify-end">
               <button className="bg-orange text-white rounded-full w-16 h-16 flex items-center justify-center">
@@ -41,9 +44,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
-          <div className="lg:flex items-center justify-center">
-            <div className=" text-white">
+        <div className="border-t border-[#FFFFFF1A] pt-20 pb-10 lg:w-11/12">
+          <div className="lg:flex gap-10">
+            <div className="lg:w-1/3 text-white">
               <img src={logo} alt="" width={130} />
               <p className="my-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -63,7 +66,6 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-
             <div className="lg:w-1/5 text-white">
               <h6 className="text-xl font-bold my-5 lg:mt-0">Pages</h6>
               <ul className="flex flex-col gap-4">
@@ -88,7 +90,6 @@ const Footer = () => {
                 </a>
               </ul>
             </div>
-
             <div className="flex flex-col lg:w-1/3 text-white">
               <h6 className="text-white text-xl font-bold my-5 lg:mt-0">
                 Newsletter
@@ -112,14 +113,14 @@ const Footer = () => {
               </label>
             </div>
 
-            <div className="pt-[15px] text-white">
-              <ul className="flex flex-col gap-4">
+            <div className="pt-[15px]">
+              <ul className="flex flex-col gap-4  text-white">
                 <li className="flex items-center gap-4">
                   <button className="flex items-center gap-2 bg-[#262d28] rounded-full w-fit justify-center p-4 hover:text-green">
                     <MdPhone className="text-green" />
                   </button>
                   <span>
-                    <p>Drop a Line</p>
+                    <p className="text-sm text-gray-500">Drop a Line</p>
                     <p>+00 (123) 456 889</p>
                   </span>
                 </li>
@@ -129,7 +130,7 @@ const Footer = () => {
                     <MdOutlineMailOutline className="text-green" />
                   </button>
                   <span>
-                    <p>Email Address</p>
+                    <p className="text-sm text-gray-500">Email Address</p>
                     <p>qKp7o@example.com</p>
                   </span>
                 </li>
@@ -138,7 +139,7 @@ const Footer = () => {
                     <MdOutlineLocationOn className="text-green" />
                   </button>
                   <span>
-                    <p>Visit Office</p>
+                    <p className="text-sm text-gray-500">Visit Office</p>
                     <p>583 Main Str. New York, USA</p>
                   </span>
                 </li>
@@ -147,9 +148,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="bg-black text-white py-2  flex justify-center">
-        Copyrights by Wandersphere. All Rights Reserved.
-      </p>
     </footer>
   )
 }
