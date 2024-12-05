@@ -83,30 +83,30 @@ const Header = () => {
           )}
         </div>
         {dropdown && (
-          <div className="lg:hidden w-full fixed top-24 bg-white  h-[70vh] transition-all ">
-            <div className="w-full flex flex-col items-baseline gap-4">
-              <ul className="w-full flex flex-col justify-center">
+          <div className="lg:hidden w-full fixed top-24 bg-white transition-all ">
+            <div className="w-full flex flex-col  items-baseline gap-4">
+              <ul className="w-full flex flex-col justify-center items-center">
                 <a
                   href="#home"
-                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
+                  className="px-6 h-10 flex items-center leading-normal no-underline font-bold text-lg text-[15px] border-0 border-b border-[#ffffff1a] border-solid"
                 >
                   Home
                 </a>
                 <a
                   href="#tours"
-                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
+                  className="px-6 h-10 flex items-center leading-normal no-underline font-bold text-lg text-[15px] border-0 border-b border-[#ffffff1a] border-solid"
                 >
                   Tours
                 </a>
                 <a
                   href="#destinations"
-                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
+                  className="px-6 h-10 flex items-center leading-normal no-underline font-bold text-lg text-[15px] border-0 border-b border-[#ffffff1a] border-solid"
                 >
                   Destinations
                 </a>
                 <a
                   href="#news"
-                  className="leading-normal no-underline text-[#1D231F] text-lg hover:text-green"
+                  className="px-6 h-10 flex items-center leading-normal no-underline font-bold text-lg text-[15px] border-0 border-b border-[#ffffff1a] border-solid"
                 >
                   News
                 </a>
