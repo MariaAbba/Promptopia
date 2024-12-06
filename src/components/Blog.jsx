@@ -79,12 +79,12 @@ const Blog = () => {
           <Blogs
             text="Things to see and do when visiting Japan"
             title="Adventure"
-            image="../../public/blog-1.jpg"
+            image="/blog-1.jpg"
           />
           <Blogs
             text="Things to see and do when visiting Japan"
             title="Adventure"
-            image="../../public/blog-1.jpg"
+            image="/blog-1.jpg"
           />
           <div className="flex flex-col gap-2">
             <Blogs text="Things to see and do when visiting Japan" />
@@ -102,22 +102,22 @@ const Blog = () => {
           itemClass="4"
         >
           <div className="h-[298px] relative overflow-hidden">
-            <img src="../../public/blog-1.jpg" alt="" />
+            <img src="/blog-1.jpg" alt="" />
           </div>
           <div className="h-[298px] relative overflow-hidden">
-            <img src="../../public/blog-1.jpg" alt="" />
+            <img src="/blog-1.jpg" alt="" />
           </div>
           <div className="h-[298px] relative overflow-hidden">
-            <img src="../../public/blog-1.jpg" alt="" />
+            <img src="/blog-1.jpg" alt="" />
           </div>
           <div className="h-[298px] relative overflow-hidden">
-            <img src="../../public/blog-1.jpg" alt="" />
+            <img src="/blog-1.jpg" alt="" />
           </div>
           <div className="h-[298px] relative overflow-hidden">
-            <img src="../../public/blog-1.jpg" alt="" />
+            <img src="/blog-1.jpg" alt="" />
           </div>
           <div className="h-[298px] relative overflow-hidden">
-            <img src="../../public/blog-1.jpg" alt="" />
+            <img src="/blog-1.jpg" alt="" />
           </div>
         </Carousel>
       </div>
